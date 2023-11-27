@@ -1,37 +1,37 @@
 /* Reset default margin and padding */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
 }
 
 main {
-  padding: 2rem;
+	padding: 2rem;
 }
 
 /* Card styles */
 .card {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  border: 1px solid #09fbf8;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	border: 1px solid #09fbf8;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.3s ease;
 }
 
 /*Covers styles*/
@@ -47,29 +47,44 @@ main {
 }
 
 .card:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
+}
+
+.covers img {
+	width: 100%;
+	height: auto;
 }
 
 .card-text {
-  padding: 1rem;
+	padding: 1rem;
+}
+
+.covers-text {
+	padding: 1rem;
 }
 
 /* Responsive styles */
 @media (min-width: 768px) {
-  .card {
-    flex-direction: row; /* Display image and text side by side on larger screens */
-  }
+	.card {
+		flex-direction: row;
+		/* Display image and text side by side on larger screens */
+	}
 
-  .card img {
-    width: 40%; /* Adjust image width for larger screens */
-  }
+	.card img {
+		width: 40%;
+		/* Adjust image width for larger screens */
+	}
 
-  .card-text {
-    padding: 1rem;
-  }
+	.card-text {
+		padding: 1rem;
+	}
+	
+	.covers-text {
+		padding: 1rem;
+	}
 }

@@ -27,11 +27,23 @@ main {
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #09fbf8;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+/*Covers styles*/
+.covers {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	border: 1px solid #09fbf8;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.3s ease;
 }
 
 .card:hover {

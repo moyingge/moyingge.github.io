@@ -5,6 +5,22 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+	/* 取消文本装饰 */
+	color: black;
+	/* 恢复默认的黑色 */
+}
+
+a div {
+	border: 2px solid #09fbf8;
+	/* 设置边框宽度和颜色 */
+	border-radius: 10px;
+	/* 设置圆角半径 */
+	padding: 10px;
+	/* 可选，为了给内容留出一些空间 */
+}
+
 /* Global styles */
 body {
 	font-family: Arial, sans-serif;

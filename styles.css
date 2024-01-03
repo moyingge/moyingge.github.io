@@ -23,7 +23,7 @@ a {
 }
 
 a div {
-	border: 2px solid #09fbf8;
+	border: 2px solid #5500ff;
 	/* 设置边框宽度和颜色 */
 	border-radius: 10px;
 	/* 设置圆角半径 */
@@ -72,7 +72,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
-	border: 1px solid #09fbf8;
+	border: 1px solid #5500ff;
 	border-radius: 5px;
 	overflow: hidden;
 	cursor: pointer;
@@ -84,7 +84,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
-	border: 1px solid #09fbf8;
+	border: 1px solid #5500ff;
 	border-radius: 5px;
 	overflow: hidden;
 	cursor: pointer;

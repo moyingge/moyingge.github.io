@@ -5,14 +5,29 @@
 	box-sizing: border-box;
 }
 
+p {
+	color: #EAF4F9;
+}
+
+h1 {
+	color: #EAF4F9;
+}
+
+h2 {
+	color: #EAF4F9;
+}
+h3 {
+	color: #EAF4F9;
+}
+
 #footer {
-  /* 设置页脚的样式 */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3.125rem;
-  background: linear-gradient(to left, #5500ff, #87ceeb);
+	/* 设置页脚的样式 */
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3.125rem;
+	background: linear-gradient(to left, #000033, #5500ff);
 }
 
 a {
@@ -35,10 +50,13 @@ a div {
 body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
+	/* overflow: hidden; */
+	/* background-color: #000033; */
+	background-image: url('images/bodybg.png');
 }
 
 header {
-	background: linear-gradient(to right, #5500ff, #87ceeb);
+	background: linear-gradient(to right, #000033, #5500ff);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -133,4 +151,80 @@ main {
 	.covers-text {
 		padding: 1rem;
 	}
+}
+
+/* 资源卡片样式 */
+
+.res-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px;
+	/* 添加整体边距 */
+}
+
+.res-card-content {
+	display: flex;
+	flex-direction: row;
+	/* 将排列方式改为水平 */
+	width: calc(20% - 20px);
+	/* 默认PC端每行5个，减去间距 */
+	background-color: #5500ff;
+	/* 修改背景色为冰蓝色 */
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+	/* 在手机端 */
+	.res-card-content {
+		width: calc(50% - 10px);
+		/* 手机端每行2个，减去间距 */
+	}
+}
+
+.res-card-content:hover {
+	transform: scale(1.1);
+}
+
+.res-card-content img {
+	width: 40%;
+	/* 设置图片宽度 */
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px 0 0 10px;
+	/* 图片左边圆角 */
+}
+
+.res-card-content .res-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* 将内容垂直居中 */
+	padding: 10px;
+	font-size: 14px;
+	flex-grow: 1;
+	/* 让内容充满剩余空间 */
+}
+
+.res-card-content .res-content p {
+	margin: 0;
+}
+
+.res-card-content .res-content h3 {
+	margin: 0;
+	/* 去掉标题的默认上下边距 */
+}
+
+/* 代码雨 */
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	/* 防止代码干扰用户交互 */
 }

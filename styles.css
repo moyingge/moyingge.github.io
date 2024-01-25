@@ -51,8 +51,8 @@ body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	/* overflow: hidden; */
-	/* background-color: #000033; */
-	background-image: url('images/bodybg.png');
+	background-color: #000033;
+	/* background-image: url('images/bodybg.png'); */
 }
 
 header {
@@ -90,6 +90,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
+	/* background-color: #5500ff; */
 	border: 1px solid #5500ff;
 	border-radius: 5px;
 	overflow: hidden;
@@ -102,6 +103,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
+	/* background-color: #5500ff; */
 	border: 1px solid #5500ff;
 	border-radius: 5px;
 	overflow: hidden;
